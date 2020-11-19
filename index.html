@@ -9,6 +9,36 @@
     <link href="./css/index.css" rel="stylesheet"/>
     <link href="./js/index.js" rel="javascript"/>
     <link href="./fonts/iconfont.css" rel="stylesheet"/>
+    <script>
+       window.onload=function(e){
+            console.log('load-e: ', e);
+            var topBarCart = document.querySelector('.topbar-cart')
+            var cartMenu = document.querySelector('.cart-menu')
+            var childrenList = document.querySelector('.children-list')
+            var headerNavLis = document.querySelectorAll('.header-nav li')
+            topBarCart.addEventListener('mouseenter',function(e){
+                cartMenu.style.height='100px'
+                cartMenu.innerHTML='购物车中还没有商品，赶紧选购吧！'
+            }) 
+            topBarCart.addEventListener('mouseleave',function(e){
+                cartMenu.style.height='0px'
+                cartMenu.innerHTML=''
+            })
+            for(var i=0;i<headerNavLis.length ;i++){
+                headerNavLis[i].addEventListener('mouseenter',function(){
+                    childrenList.style.display='block'
+                    childrenList.style.height='88px'
+                })
+                headerNavLis[i].addEventListener('mouseleave',function(){
+                childrenList.style.display='none'
+                childrenList.style.height='0px'
+            })
+            }
+           
+        }
+       
+        
+    </script>
 </head>
 <body>
     <div class="tobar-banner-Wrapper">
@@ -45,14 +75,44 @@
                 <a href="">Select Location</a>
             </div>
             <div class="topbar-cart">
-                <i class="iconfont icon-cart" >&#xe60e;</i>
+                <em class="iconfont icon-cart" >&#xe60e;</em>
+                <em>购物车（0）</em>
+                <div class="cart-menu"></div>
             </div>
+            
             <div class="topbar-info">
                 <a href="">登录</a>
                 <span>|</span>
                 <a href="">注册</a>
                 <span>|</span>
                 <a href="">消息通知</a>
+            </div>
+        </div>
+    </div>
+    <div class="site-header">
+        <div class="container">
+            <div class="header-logo">
+                <a></a>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li><a>小米手机</a></li>
+                    <li><a>Redmi 红米</a></li>
+                    <li><a>电视</a></li>
+                    <li><a>笔记本</a></li>
+                    <li><a>家电</a></li>
+                    <li><a>路由器</a></li>
+                    <li><a>智能硬件</a></li>
+                    <li><a>服务</a></li>
+                    <li><a>社区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="children-list">
+            <div class="container">
+                <ul>
+
+                </ul>
             </div>
         </div>
     </div>
