@@ -1,0 +1,21 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1605765746251'); /* IE9 */
+  src: url('iconfont.eot?t=1605765746251#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARMAAsAAAAACQAAAAP+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqGCIRkATYCJAMICwYABCAFhG0HMRuLBxHVm73Jfh7YxtoFPyDw0JKeLHkYPNNmP2bw71nzkpRegD65e5D0V57/93bf9s9gHzCMNMAEwwgC8QLArM3QGBVhqJLx4L/5Kxvoucnl28WhasbEgM3P4IDkYkFbc9KaNADDAQrgmt2LC9IrtSA9LxVEO4zdRBzG+UAAfCackCsmKQtcDLCIAMhTX1sObsyMKSERXB07Z2eBfGDhjknUZQDT3O8nPzzCBSisCVCWVhNdhbC3YlhAj9SNLKIISPpzApD2ATTACcAAuXPdKaD9tBMa33AzLMqbGQTeinU6Kp7tPx5AgCwAtZDFGon3SYKlu6qm+CwDEB1r/9mqEhAdhkozgQj/mgKxWK9y/uHTR1ceO3dEf8Eew5V3Y7S3zUbeiR68Z7lQW579Olla/tqDR7eu2nbs0JkD9kfMsdjpcI729u07d0I3Gc5Wz1XP32+lbfcn28/Rn6eZp1rocNDHmL/68Ioj544ZLjyaPUc1RzNPQ+aq5ypnl/XDHcTPn00UDPLYaJozTxCAjzC7cXCDKk85cj1fqN1IClrF+UtueIv23TItXHrTp0m7Vp0zd6t67trdG5dp1u1RHbijQvac9acjxTUn6g3nba8X+kzXWISFm3uER0s9o8Ipz/AYqdphhNqkZke/YN7yeiOfkbZlbJ5h0Wae0Z8sLMbMxj5mFkWNPOnhJHO02ik7CZh1yE9L3y9OoZFUUVRYIS3PHfH2brhlXcsK0yPGj27kfIu0DH93r7VW8sKUWt6tyi33NOLHuIYbVayencnmsTPnrCm/Momi2k5GGMmMLE/KdgJuHUJZ+nSHimSpHVHBuT7pFjtMtxhfulHzLHOSmFM5olb3w5XaXq2KLY8UMsfk7f/ey+Kwer/vnxcsdhfZNbMlnuLf+H0llrMrA9faX+dEj/zdFs2xb+dmtQ8dLhQL+I0OFv/NzUU7Ld5+vnk3yzSCQwnahAqEAQB05+iTdNz/8TNIlNvfKpUE/eE2AwB49Nixww3qzjGo5wW4d9FD4G+Q1OxhTBmwUKVLcvNUANFdVvJhDNAB+OWetvWqIHQSXFn2ArwcxhzQuKyQDNYJWAS8gI0rFPgcxe4XUOgAjRQPgINxDBBS24AidgxoUleQDPYJsKh9ATZpaODLIYpjCmg2WfmRHXCGSP5Pa5CLkc1Kr/iG+X04jcpc8gua1xh1dZvMTbigfazJn7k3Y2KVk0bmYjgOoaSyIVi9mKWhaTjvjeogZ1GKVDhDJP5P1iAX0+FWpr7+hvl9OC3panC+oHkdn3RqbQ3kpL5qdZ3LQ/Jn7pkxYZWTjIwTB0wLSfnTNgSrLS2SadBwg7iuuh5fe17dEdiAYQROnDhvt1+dVEUBAAA=') format('woff2'),
+  url('iconfont.woff?t=1605765746251') format('woff'),
+  url('iconfont.ttf?t=1605765746251') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1605765746251#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tubiao-:before {
+  content: "\e60e";
+}
+

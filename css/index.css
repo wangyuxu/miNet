@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tobar-banner-Wrapper {
+    height: 120px;
+    background-color: aqua;
+}
+.tobar-banner-Wrapper .link-block {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background: url('../images/top-banner.jpg') no-repeat 50%;
+    background-size: auto 120px;
+}
+.site-topbar {
+    background-color: #333333;
+    width: 100%;
+    height: 40px;
+}
+.container{
+    width: 1226px;
+    margin: 0 auto;
+}
+.topbar-nav {
+    float: left;
+}
+.topbar-nav a {
+    line-height: 40px;
+    text-decoration: none;
+    color: #adadad;
+    font-size: 12px;
+}
+.topbar-nav a:hover {
+    color: #fff;
+}
+
+.sep {
+    color: #424242;
+}
+.topbar-cart{
+    float: right;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+}
+
+.topbar-info{
+    float: right;
+    height: 40px;
+}
+
+.topbar-info a {
+    line-height: 40px;
+    text-decoration: none;
+    color: #adadad;
+    font-size: 12px;
+}
+
+.topbar-cart .icon-cart  {
+    color: #f00;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
