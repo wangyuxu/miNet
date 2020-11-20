@@ -15,7 +15,61 @@
             var topBarCart = document.querySelector('.topbar-cart')
             var cartMenu = document.querySelector('.cart-menu')
             var childrenList = document.querySelector('.children-list')
+            var swipperSlide = document.querySelector('.swipper-slide')
             var headerNavLis = document.querySelectorAll('.header-nav li')
+
+            var slids=[
+               {
+                label:'手机 电话卡',
+                target:'#',
+                key:'phone',
+               },
+               {
+                label:'电视 盒子',
+                target:'#',
+                key:'tv',
+               },
+               {
+                label:'笔记本 显示器',
+                target:'#',
+                key:'pc',
+               },
+               {
+                label:'家电 插线板',
+                target:'#',
+                key:'jd',
+               },
+               {
+                label:'出行 穿戴',
+                target:'#',
+                key:'cx',
+               },
+               {
+                label:'智能 路由器',
+                target:'#',
+                key:'zn',
+               },
+               {
+                label:'电源 配件',
+                target:'#',
+                key:'source',
+               },
+               {
+                label:'健康 儿童',
+                target:'#',
+                key:'health',
+               },
+               {
+                label:'耳机 音箱',
+                target:'#',
+                key:'airpod',
+               },
+               {
+                label:'生活 箱包',
+                target:'#',
+                key:'life',
+               }
+            ]
             topBarCart.addEventListener('mouseenter',function(e){
                 cartMenu.style.height='100px'
                 cartMenu.innerHTML='购物车中还没有商品，赶紧选购吧！'
@@ -26,18 +80,54 @@
             })
             for(var i=0;i<headerNavLis.length ;i++){
                 headerNavLis[i].addEventListener('mouseenter',function(){
+                    this.children[0].style.color='#f00'
                     childrenList.style.display='block'
                     childrenList.style.height='88px'
                 })
                 headerNavLis[i].addEventListener('mouseleave',function(){
-                childrenList.style.display='none'
-                childrenList.style.height='0px'
+                    this.children[0].style.color='#333'
+                    childrenList.style.display='none'
+                    childrenList.style.height='0px'
             })
             }
-           
+            var swipperul = document.createElement('ul')
+            swipperul.style.boxSizing='border-box'
+            swipperul.style.padding='20px 0px';
+            swipperul.style.fontSize='0px'
+            for(var i =0;i<slids.length ; i++){
+                var li =document.createElement('li')
+                li.style.padding='0px 22px 0px 30px'
+                li.style.width='100%'
+                li.style.height='42px'
+                li.style.lineHeight='42px'
+                li.style.boxSizing='border-box'
+                li.style.display='inline-block'
+                li.style.position='relative'
+                var a =document.createElement('a')
+                a.style.textDecoration='none'
+                a.style.fontSize='14px'
+                a.style.color='#fff'
+                a.style.position='absolute'
+                a.style.float='left'
+                a.style.left='30px'
+                a.innerHTML=slids[i].label
+                a.href=slids[i].target
+                var span = document.createElement('span')
+                span.style.position='absolute'
+                span.style.float='right'
+                span.style.right='22px'
+                span.style.color='#fff'
+                span.innerHTML='&#xe63c;'
+                span.className='iconfont'
+                span.style.textAlign='right'
+                li.appendChild(a);
+                li.appendChild(span)
+                swipperul.appendChild(li)
+                console.log('li-offsetLeft',swipperul.children[i].offsetLeft);
+            }
+            swipperSlide.appendChild(swipperul)
         }
-       
-        
+
     </script>
 </head>
 <body>
@@ -90,7 +180,7 @@
         </div>
     </div>
     <div class="site-header">
-        <div class="container">
+        <div class="container fr">
             <div class="header-logo">
                 <a></a>
             </div>
@@ -107,12 +197,46 @@
                     <li><a>社区</a></li>
                 </ul>
             </div>
+            <div class="header-search">
+                <div class="fr">
+                    <input type="text" />
+                    <div class="search-logo">
+                        <span class="iconfont">&#xe60c;</span>
+                    </div>
+                </div>
+               
+               
+            </div>
         </div>
         <div class="children-list">
             <div class="container">
                 <ul>
 
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div >
+        <div class="container">
+            <div class="swipper-wrapper fr">
+                <div class="swipper-slide">
+
+                </div>
+                <div class="swipper-content fr">
+                        <div >
+                            <!-- <div class="swipper01"></div> -->
+                            <img src="./images/swipper01.jpg" width='992px' height='460px'/>
+                        </div>
+                        <div class="arrow-left-swipper">
+                            <
+                        </div>
+                        <div class="arrow-right-swipper">
+                            >
+                        </div>
+                        <div class="dot-swipper">
+
+                        </div>
+                </div>
             </div>
         </div>
     </div>
